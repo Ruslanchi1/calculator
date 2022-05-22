@@ -2,7 +2,6 @@
   <div class="container">
     <div class="calc">
       <div class="calc__screen">
-        <div>{{calculatorValue || 0}}</div>
         <input v-model="calculatorValue" type="text" class="screen"/>
       </div>
       <div class="calc__but">
