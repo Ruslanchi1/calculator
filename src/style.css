@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.calc {
+    margin: 100px auto;
+    width: 320px;
+
+}
+
+.calc__screen {
+    height: 150px;
+    width: 370px;
+    border-radius: 25px 25px 0 0;
+}
+
+
+.calc__screen input {
+    float: right;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: right;
+    color: #E0E0E0;
+    outline: unset;
+    border-radius: 25px 25px 0 0;
+    background: linear-gradient(134.31deg, rgba(255, 255, 255, 0.2) -9.79%, rgba(255, 255, 255, 0.072) 56.48%, rgba(255, 255, 255, 0) 58.82%), #151515;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.36), inset 0px 0px 11px -2px rgba(21, 21, 21, 0.7);
+}
+
+.calc__but {
+    height: 450px;
+    width: 370px;
+    background: radial-gradient(138.51% 138.51% at -8.68% -37.02%, #575757 0%, #353535 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(255, 255, 255, 0.03), inset 1px 1px 0px rgba(255, 255, 255, 0.08);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.buttons {
+    padding: 15px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 65px 65px 65px 65px;
+    grid-template-rows: 85px 85px 85px 85px 85px;
+}
+
+.btn {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    color: #E0E0E0;
+    font-size: 24px;
+    border-radius: 50px;
+    background: radial-gradient(100% 100% at 87.14% 100%, rgba(119, 119, 119, 0.46) 0%, rgba(56, 54, 54, 0.85) 100%);
+    box-shadow: 0px 0px 0px 1px #212121, 5px 8px 4px -2px rgba(0, 0, 0, 0.16), -2px -2px 4px rgba(255, 255, 255, 0.05), inset 1px 3px 4px rgba(0, 0, 0, 0.25);
+    transition: .1s;
+}
+
+button:hover {
+    background: linear-gradient(134.31deg, rgba(255, 255, 255, 0.2) -9.79%, rgba(255, 255, 255, 0.072) 56.48%, rgba(255, 255, 255, 0) 58.82%), #151515;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.36), inset 0px 0px 11px -2px rgba(21, 21, 21, 0.7);
+    transform: scale();
+}
+
+button:active {
+    background: -webkit-linear-gradient(90deg, #131111, #43225e);
+    background: linear-gradient(90deg, #131111, #43225e);
+    transform: scale(0.9);
+}
